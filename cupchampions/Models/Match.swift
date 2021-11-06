@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Match: Codable {
+    let stage: String
+    let games: [Game]
+}
