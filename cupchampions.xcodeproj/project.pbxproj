@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7103123727488160007DACA4 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7103123627488160007DACA4 /* GamesTableViewCell.swift */; };
 		713AE7D02736CDEE00BB9B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AE7CF2736CDEE00BB9B40 /* AppDelegate.swift */; };
 		713AE7D22736CDEE00BB9B40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AE7D12736CDEE00BB9B40 /* SceneDelegate.swift */; };
 		713AE7D72736CDEE00BB9B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713AE7D52736CDEE00BB9B40 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7103123627488160007DACA4 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GamesTableViewCell.swift; path = cupchampions/Controllers/GamesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		713AE7CC2736CDEE00BB9B40 /* cupchampions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cupchampions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		713AE7CF2736CDEE00BB9B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		713AE7D12736CDEE00BB9B40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		713AE7EB2736F27000BB9B40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7103123627488160007DACA4 /* GamesTableViewCell.swift */,
 				713AE7EC2736F34500BB9B40 /* WinnersTableViewController.swift */,
 				713AE7F02736F3C700BB9B40 /* WorldCupViewController.swift */,
 				713AE7FC2737167E00BB9B40 /* WorldCupTableViewCell.swift */,
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				713AE7ED2736F34500BB9B40 /* WinnersTableViewController.swift in Sources */,
+				7103123727488160007DACA4 /* GamesTableViewCell.swift in Sources */,
 				713AE7FD2737167E00BB9B40 /* WorldCupTableViewCell.swift in Sources */,
 				713AE7D02736CDEE00BB9B40 /* AppDelegate.swift in Sources */,
 				713AE7FA2736F7A700BB9B40 /* Game.swift in Sources */,
