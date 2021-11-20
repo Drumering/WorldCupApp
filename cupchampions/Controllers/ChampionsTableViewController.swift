@@ -1,25 +1,36 @@
 //
-//  WinnersTableViewController.swift
+//  ChampionsTableViewController.swift
 //  cupchampions
 //
-//  Created by Anderson Mendes de Almeida on 06/11/21.
+//  Created by Anderson Mendes de Almeida on 20/11/21.
 //
 
 import UIKit
 
-class WinnersTableViewController: UITableViewController {
-
-    var worldCups: [WorldCup] = []
+class ChampionsTableViewController: UITableViewController {
     
+    var worldCups: [WorldCup] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         worldCups = Reader.loadWorldCups()
+        worldCups = worldCups.uniqued()
+        worldCups.sort(by: { (lhs, rhs) -> Bool in
+            return lhs.winner < rhs.winner
+        })
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
@@ -28,11 +39,13 @@ class WinnersTableViewController: UITableViewController {
         return worldCups.count
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WorldCupTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ChampionTableViewCell
+
         let worldCup = worldCups[indexPath.row]
-        cell.prepare(with: worldCup)
-               
+        cell.prepare(worldCup: worldCup)
+
         return cell
     }
 
@@ -71,17 +84,21 @@ class WinnersTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if let vc = segue.destination as? WorldCupViewController {
-            let worldCup = worldCups[tableView.indexPathForSelectedRow!.row]
-            vc.worldCup = worldCup
-        }
     }
+    */
 
+}
+
+extension Sequence where Element: Hashable {
+    func uniqued() -> [Element] {
+        var set = Set<Element>()
+        return filter { set.insert($0).inserted }
+    }
 }

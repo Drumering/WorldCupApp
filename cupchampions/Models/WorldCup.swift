@@ -17,3 +17,13 @@ struct WorldCup: Codable {
     let viceScore: String
     let matches: [Match]
 }
+
+extension WorldCup: Hashable {
+    static func == (lhs: WorldCup, rhs: WorldCup) -> Bool {
+        return lhs.winner == rhs.winner
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(winner)
+    }
+}

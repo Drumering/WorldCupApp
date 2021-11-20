@@ -20,6 +20,9 @@
 		713AE7F72736F79C00BB9B40 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AE7F62736F79C00BB9B40 /* Match.swift */; };
 		713AE7FA2736F7A700BB9B40 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AE7F92736F7A700BB9B40 /* Game.swift */; };
 		713AE7FD2737167E00BB9B40 /* WorldCupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AE7FC2737167E00BB9B40 /* WorldCupTableViewCell.swift */; };
+		719020A62749903C006E37AE /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719020A52749903C006E37AE /* Reader.swift */; };
+		719020AA274995F2006E37AE /* ChampionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719020A9274995F2006E37AE /* ChampionsTableViewController.swift */; };
+		719020AE27499AB4006E37AE /* ChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719020AD27499AB4006E37AE /* ChampionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		713AE7F62736F79C00BB9B40 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		713AE7F92736F7A700BB9B40 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		713AE7FC2737167E00BB9B40 /* WorldCupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupTableViewCell.swift; sourceTree = "<group>"; };
+		719020A52749903C006E37AE /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		719020A9274995F2006E37AE /* ChampionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsTableViewController.swift; sourceTree = "<group>"; };
+		719020AD27499AB4006E37AE /* ChampionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		713AE7C32736CDEE00BB9B40 = {
 			isa = PBXGroup;
 			children = (
+				719020A82749945E006E37AE /* Utils */,
 				713AE7CE2736CDEE00BB9B40 /* cupchampions */,
 				713AE7CD2736CDEE00BB9B40 /* Products */,
 			);
@@ -114,10 +121,20 @@
 			children = (
 				7103123627488160007DACA4 /* GamesTableViewCell.swift */,
 				713AE7EC2736F34500BB9B40 /* WinnersTableViewController.swift */,
+				719020AD27499AB4006E37AE /* ChampionTableViewCell.swift */,
 				713AE7F02736F3C700BB9B40 /* WorldCupViewController.swift */,
 				713AE7FC2737167E00BB9B40 /* WorldCupTableViewCell.swift */,
+				719020A9274995F2006E37AE /* ChampionsTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		719020A82749945E006E37AE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				719020A52749903C006E37AE /* Reader.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,10 +210,13 @@
 			files = (
 				713AE7ED2736F34500BB9B40 /* WinnersTableViewController.swift in Sources */,
 				7103123727488160007DACA4 /* GamesTableViewCell.swift in Sources */,
+				719020AA274995F2006E37AE /* ChampionsTableViewController.swift in Sources */,
+				719020A62749903C006E37AE /* Reader.swift in Sources */,
 				713AE7FD2737167E00BB9B40 /* WorldCupTableViewCell.swift in Sources */,
 				713AE7D02736CDEE00BB9B40 /* AppDelegate.swift in Sources */,
 				713AE7FA2736F7A700BB9B40 /* Game.swift in Sources */,
 				713AE7F42736F55A00BB9B40 /* WorldCup.swift in Sources */,
+				719020AE27499AB4006E37AE /* ChampionTableViewCell.swift in Sources */,
 				713AE7F12736F3C700BB9B40 /* WorldCupViewController.swift in Sources */,
 				713AE7D22736CDEE00BB9B40 /* SceneDelegate.swift in Sources */,
 				713AE7F72736F79C00BB9B40 /* Match.swift in Sources */,
