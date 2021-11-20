@@ -57,19 +57,20 @@ extension WorldCupViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // TODO desenhar a cell
         // recuperando o Game que se encontra em algum Match (oitavas de final, quartas, semi...)
-        let match = worldCup?.matches[indexPath.section]
-        let game = match?.games[indexPath.row]
              
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GamesTableViewCell
-        cell.prepare(with: game!)
+        
+        if let match = worldCup?.matches[indexPath.section] {
+            let game = match.games[indexPath.row]
+            cell.prepare(with: game)
+        }
              
         return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         // TODO opcional: obter um nome para secao
-        return worldCup?.matches[section].stage
+        return worldCup?.matches[section].stage ?? " "
     }
 }

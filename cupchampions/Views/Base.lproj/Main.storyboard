@@ -232,13 +232,13 @@
                                                         <constraint firstAttribute="height" constant="28" id="y3L-GN-KXT"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasil" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ToL-3r-HbC">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasil" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ToL-3r-HbC">
                                                     <rect key="frame" x="70" y="15.333333333333332" width="50.666666666666657" height="13.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Argentina" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="RsT-Tk-Hvx">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Argentina" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="RsT-Tk-Hvx">
                                                     <rect key="frame" x="269.33333333333331" y="15.333333333333332" width="50.666666666666686" height="13.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
@@ -260,10 +260,10 @@
                                                 <constraint firstItem="vvq-Qb-fFu" firstAttribute="leading" secondItem="ToL-3r-HbC" secondAttribute="trailing" constant="8" id="Jaf-bD-S8Y"/>
                                                 <constraint firstItem="vvq-Qb-fFu" firstAttribute="leading" secondItem="ToL-3r-HbC" secondAttribute="trailing" constant="8" id="Nov-c8-IPF"/>
                                                 <constraint firstItem="RsT-Tk-Hvx" firstAttribute="centerY" secondItem="aMl-Fb-Cfn" secondAttribute="centerY" id="TZG-4t-l66"/>
+                                                <constraint firstItem="akD-kx-y63" firstAttribute="centerY" secondItem="aMl-Fb-Cfn" secondAttribute="centerY" id="WHU-e3-wwQ"/>
                                                 <constraint firstItem="6Mh-lX-bzl" firstAttribute="centerY" secondItem="akD-kx-y63" secondAttribute="centerY" id="dv4-DF-XAk"/>
                                                 <constraint firstItem="vvq-Qb-fFu" firstAttribute="leading" secondItem="ToL-3r-HbC" secondAttribute="trailing" constant="8" id="fm0-t8-Em5"/>
                                                 <constraint firstItem="akD-kx-y63" firstAttribute="leading" secondItem="aMl-Fb-Cfn" secondAttribute="leading" constant="16" id="o3y-ig-73f"/>
-                                                <constraint firstItem="akD-kx-y63" firstAttribute="top" secondItem="aMl-Fb-Cfn" secondAttribute="top" constant="8" id="pgm-Vr-bZm"/>
                                                 <constraint firstItem="vvq-Qb-fFu" firstAttribute="centerX" secondItem="aMl-Fb-Cfn" secondAttribute="centerX" id="q9X-B3-DjL"/>
                                                 <constraint firstItem="6Mh-lX-bzl" firstAttribute="leading" secondItem="RsT-Tk-Hvx" secondAttribute="trailing" constant="8" id="vzX-Zo-P0Y"/>
                                                 <constraint firstItem="RsT-Tk-Hvx" firstAttribute="leading" secondItem="vvq-Qb-fFu" secondAttribute="trailing" constant="8" id="w71-rI-Fax"/>
