@@ -27,10 +27,10 @@ class GamesTableViewCell: UITableViewCell {
     }
     
     func prepare(with game: Game) {
-            ivHome.image = UIImage(named: game.home)
-            ivAway.image = UIImage(named: game.away)
-            lbHome.text = game.home
-            lbAway.text = game.away
-            lbScore.text = game.score
-        }
+        ivHome.image = UIImage(named: game.home)
+        ivAway.image = UIImage(named: game.away)
+        lbHome.text = game.home
+        lbAway.text = game.away
+        lbScore.text = game.score
+    }
 }

@@ -10,16 +10,18 @@ import UIKit
 class ChampionsTableViewController: UITableViewController {
     
     var worldCups: [WorldCup] = []
+    var allWorldCups: [WorldCup] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         worldCups = Reader.loadWorldCups()
+        allWorldCups = worldCups
         worldCups = worldCups.uniqued()
         worldCups.sort(by: { (lhs, rhs) -> Bool in
             return lhs.winner < rhs.winner
         })
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -84,15 +86,31 @@ class ChampionsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let winner = worldCups[tableView.indexPathForSelectedRow!.row]
+        
+        //nome do vencedor selecionado
+        //numero de copas conquistadas
+        //quais foram as conquistas
+        
+        let selectedWinner = winner.winner
+        let whichWins = allWorldCups.filter { (worldCup) -> Bool in
+            return worldCup.winner == winner.winner
+        }
+        let howManyWins = whichWins.count
+        
+        if let vc = segue.destination as? ChampionViewController {
+            vc.champion = selectedWinner
+            vc.totalAchievements = String(howManyWins)
+            vc.worldCups = whichWins
+        }
     }
-    */
 
 }
 

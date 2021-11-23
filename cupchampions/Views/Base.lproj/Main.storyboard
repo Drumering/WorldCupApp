@@ -346,9 +346,8 @@
         <!--Paises vencedores-->
         <scene sceneID="z1u-F0-L5d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kUy-Ta-86N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="NSP-Dw-EsT" customClass="ChampionsTableViewController" customModule="cupchampions" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MmO-lp-ekB">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="MmO-lp-ekB">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -368,11 +367,11 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="bDB-9j-k60" userLabel="cell" customClass="ChampionTableViewCell" customModule="cupchampions" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="166" width="390" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="bDB-9j-k60" userLabel="cell" customClass="ChampionTableViewCell" customModule="cupchampions" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="193.33333206176758" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bDB-9j-k60" id="5sg-zh-fRl">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="358.66666666666669" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brasil" translatesAutoresizingMaskIntoConstraints="NO" id="85k-Il-jjp">
@@ -399,6 +398,7 @@
                                 <connections>
                                     <outlet property="ivWinner" destination="85k-Il-jjp" id="XAg-E3-QpW"/>
                                     <outlet property="lbWinner" destination="CSh-BS-XMW" id="r1g-QW-3vy"/>
+                                    <segue destination="jrc-P1-4af" kind="presentation" id="gMN-7K-Lpk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -409,8 +409,134 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Paises vencedores" id="znw-gV-ghW"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUy-Ta-86N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="425.82938388625593"/>
+        </scene>
+        <!--Champion View Controller-->
+        <scene sceneID="7nR-ce-vOx">
+            <objects>
+                <viewController id="jrc-P1-4af" customClass="ChampionViewController" customModule="cupchampions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Q1-wD-Edc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="C6K-cW-fWK">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="iVg-9r-cWM">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Argentina" translatesAutoresizingMaskIntoConstraints="NO" id="IUG-9G-FxJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZW-d4-NcK">
+                                            <rect key="frame" x="0.0" y="93" width="390" height="57"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="yhf-zJ-u1e">
+                                                    <rect key="frame" x="142" y="18" width="37" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achievements:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="8w9-rd-2ln">
+                                                    <rect key="frame" x="14" y="18" width="112" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="yhf-zJ-u1e" firstAttribute="centerY" secondItem="8w9-rd-2ln" secondAttribute="centerY" id="WW1-PS-lQt"/>
+                                                <constraint firstItem="yhf-zJ-u1e" firstAttribute="leading" secondItem="8w9-rd-2ln" secondAttribute="trailing" constant="16" id="fNw-Ec-F4K"/>
+                                                <constraint firstItem="8w9-rd-2ln" firstAttribute="leading" secondItem="UZW-d4-NcK" secondAttribute="leading" constant="14" id="gvV-Bs-EW0"/>
+                                                <constraint firstItem="8w9-rd-2ln" firstAttribute="centerY" secondItem="UZW-d4-NcK" secondAttribute="centerY" id="yHR-KB-hyY"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="IUG-9G-FxJ" firstAttribute="leading" secondItem="iVg-9r-cWM" secondAttribute="leading" id="CIE-vj-RIz"/>
+                                        <constraint firstItem="UZW-d4-NcK" firstAttribute="top" secondItem="IUG-9G-FxJ" secondAttribute="bottom" id="HyE-2k-kiN"/>
+                                        <constraint firstItem="UZW-d4-NcK" firstAttribute="top" secondItem="IUG-9G-FxJ" secondAttribute="bottom" id="Wee-zl-IdO"/>
+                                        <constraint firstAttribute="bottom" secondItem="UZW-d4-NcK" secondAttribute="bottom" id="YJ8-Hp-AUm"/>
+                                        <constraint firstItem="IUG-9G-FxJ" firstAttribute="top" secondItem="iVg-9r-cWM" secondAttribute="top" id="c58-NU-2FU"/>
+                                        <constraint firstAttribute="trailing" secondItem="UZW-d4-NcK" secondAttribute="trailing" id="jcy-lp-8S3"/>
+                                        <constraint firstAttribute="trailing" secondItem="IUG-9G-FxJ" secondAttribute="trailing" id="maa-YQ-tZi"/>
+                                        <constraint firstItem="UZW-d4-NcK" firstAttribute="leading" secondItem="iVg-9r-cWM" secondAttribute="leading" id="y45-le-l3i"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="W9r-f8-qqn" customClass="ChampionDetailTableViewCell" customModule="cupchampions" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="205.33333206176758" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W9r-f8-qqn" id="60S-MD-drO">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brasil" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-3t-NnF">
+                                                    <rect key="frame" x="8" y="8" width="46" height="28"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="YoN-wb-KLc"/>
+                                                        <constraint firstAttribute="height" constant="28" id="mTJ-y2-M93"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Argentina" translatesAutoresizingMaskIntoConstraints="NO" id="zWL-1L-2uo">
+                                                    <rect key="frame" x="336" y="8" width="46" height="28"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="8Cc-6h-CDh"/>
+                                                        <constraint firstAttribute="height" constant="28" id="hY9-Wu-2kE"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(10) 1 x 1 (11)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXL-4h-APT">
+                                                    <rect key="frame" x="70" y="11.333333333333336" width="250" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="S6b-3t-NnF" firstAttribute="leading" secondItem="60S-MD-drO" secondAttribute="leading" constant="8" id="GgZ-hv-Y7A"/>
+                                                <constraint firstItem="KXL-4h-APT" firstAttribute="centerY" secondItem="60S-MD-drO" secondAttribute="centerY" id="OrD-Tt-m1E"/>
+                                                <constraint firstAttribute="trailing" secondItem="zWL-1L-2uo" secondAttribute="trailing" constant="8" id="Q23-ep-Hya"/>
+                                                <constraint firstItem="zWL-1L-2uo" firstAttribute="leading" secondItem="KXL-4h-APT" secondAttribute="trailing" constant="16" id="h6Z-Zd-fPp"/>
+                                                <constraint firstItem="zWL-1L-2uo" firstAttribute="centerY" secondItem="S6b-3t-NnF" secondAttribute="centerY" id="osy-Xo-qEC"/>
+                                                <constraint firstItem="KXL-4h-APT" firstAttribute="leading" secondItem="S6b-3t-NnF" secondAttribute="trailing" constant="16" id="s3r-aW-Vpb"/>
+                                                <constraint firstItem="S6b-3t-NnF" firstAttribute="centerY" secondItem="60S-MD-drO" secondAttribute="centerY" id="zcj-o2-ABh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ivVice" destination="zWL-1L-2uo" id="ohl-el-7Ro"/>
+                                            <outlet property="ivWinner" destination="S6b-3t-NnF" id="ilX-W2-odJ"/>
+                                            <outlet property="lbScore" destination="KXL-4h-APT" id="Vbi-E3-lvb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jrc-P1-4af" id="NX5-9Y-qiu"/>
+                                    <outlet property="delegate" destination="jrc-P1-4af" id="PaT-ze-9kt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XPF-ny-KqD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C6K-cW-fWK" firstAttribute="top" secondItem="XPF-ny-KqD" secondAttribute="top" id="DZP-5A-5MM"/>
+                            <constraint firstItem="C6K-cW-fWK" firstAttribute="leading" secondItem="XPF-ny-KqD" secondAttribute="leading" id="Q5L-TJ-T62"/>
+                            <constraint firstItem="XPF-ny-KqD" firstAttribute="bottom" secondItem="C6K-cW-fWK" secondAttribute="bottom" id="Ufb-3f-TiK"/>
+                            <constraint firstItem="XPF-ny-KqD" firstAttribute="trailing" secondItem="C6K-cW-fWK" secondAttribute="trailing" id="XWI-Ln-5co"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ivChampion" destination="IUG-9G-FxJ" id="d2j-yC-zaP"/>
+                        <outlet property="lbTotalAchievements" destination="yhf-zJ-u1e" id="4so-2H-e3L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84u-sB-mOs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996.92307692307691" y="425.82938388625593"/>
         </scene>
         <!--Paises-->
         <scene sceneID="pXX-Oc-OF2">

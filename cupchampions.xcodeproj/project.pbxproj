@@ -23,6 +23,8 @@
 		719020A62749903C006E37AE /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719020A52749903C006E37AE /* Reader.swift */; };
 		719020AA274995F2006E37AE /* ChampionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719020A9274995F2006E37AE /* ChampionsTableViewController.swift */; };
 		719020AE27499AB4006E37AE /* ChampionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719020AD27499AB4006E37AE /* ChampionTableViewCell.swift */; };
+		719020B7274C8EC7006E37AE /* ChampionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719020B6274C8EC7006E37AE /* ChampionViewController.swift */; };
+		719020BE274C94ED006E37AE /* ChampionDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719020BD274C94ED006E37AE /* ChampionDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		719020A52749903C006E37AE /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		719020A9274995F2006E37AE /* ChampionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsTableViewController.swift; sourceTree = "<group>"; };
 		719020AD27499AB4006E37AE /* ChampionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionTableViewCell.swift; sourceTree = "<group>"; };
+		719020B6274C8EC7006E37AE /* ChampionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChampionViewController.swift; path = cupchampions/Controllers/ChampionViewController.swift; sourceTree = SOURCE_ROOT; };
+		719020BD274C94ED006E37AE /* ChampionDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 		713AE7EB2736F27000BB9B40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				719020B6274C8EC7006E37AE /* ChampionViewController.swift */,
+				719020BD274C94ED006E37AE /* ChampionDetailTableViewCell.swift */,
 				7103123627488160007DACA4 /* GamesTableViewCell.swift */,
 				713AE7EC2736F34500BB9B40 /* WinnersTableViewController.swift */,
 				719020AD27499AB4006E37AE /* ChampionTableViewCell.swift */,
@@ -213,6 +219,8 @@
 				719020AA274995F2006E37AE /* ChampionsTableViewController.swift in Sources */,
 				719020A62749903C006E37AE /* Reader.swift in Sources */,
 				713AE7FD2737167E00BB9B40 /* WorldCupTableViewCell.swift in Sources */,
+				719020BE274C94ED006E37AE /* ChampionDetailTableViewCell.swift in Sources */,
+				719020B7274C8EC7006E37AE /* ChampionViewController.swift in Sources */,
 				713AE7D02736CDEE00BB9B40 /* AppDelegate.swift in Sources */,
 				713AE7FA2736F7A700BB9B40 /* Game.swift in Sources */,
 				713AE7F42736F55A00BB9B40 /* WorldCup.swift in Sources */,
